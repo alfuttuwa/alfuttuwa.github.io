@@ -1,1 +1,0 @@
-# alfuttuwa.github.io
