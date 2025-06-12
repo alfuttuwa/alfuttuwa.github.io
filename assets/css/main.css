@@ -1140,9 +1140,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
@@ -1529,6 +1532,7 @@ input, select, textarea {
 		max-width: 100%;
 		z-index: 3;
 	}
+	
 
 		#main article {
 			-moz-transform: translateY(0.25rem);
@@ -1656,3 +1660,81 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+
+
+		#audio ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+/*AUDIOOO*/
+
+#audio li {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  background: #1e1e1e;
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#audio li:hover {
+  background: #2a2a2a;
+  transform: scale(1.01);
+}
+
+#audio li span {
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+#audio li button {
+  
+  border: none;
+  padding: 25px;
+  
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+#audio li button i {
+  transform: translateX(3px); /* move left */
+}
+
+#audio li button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.1);
+}
+
+#audio li button:active {
+  transform: scale(0.95);
+}
+
+#audio li span {
+  font-family: 'Poppins', sans-serif;
+}
+
+#audio li span small {
+  display: block;
+  color: #aaa;
+  font-size: 11px; /* smaller than default */
+  margin-top: 2px;
+}

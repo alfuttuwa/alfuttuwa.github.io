@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alfuttuwa.github.io/sitemap.xml
